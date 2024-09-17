@@ -61,6 +61,23 @@ section ul li a:hover {
   text-decoration: underline;
 }
 
+
+.container {
+  display: flex;
+}
+
+.section {
+  flex: 1; /*grow*/
+  border: 1px solid;
+}
+
+@media (max-width: 768px) { /*breakpoint*/
+  .container {
+    flex-direction: column;
+  }
+}
+
+
 /* Style du pied de page */
 footer {
   background-color: #333;
